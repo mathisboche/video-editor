@@ -65,6 +65,11 @@
             border-radius: 50%;
         }
 
+        .services-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
         .service-item {
             border: 2px solid #007bff;
             border-radius: 10px;
@@ -85,6 +90,35 @@
             line-height: 1.6;
             margin-bottom: 15px;
         }
+        
+        /* Media Query pour les téléphones */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            a {
+                margin: 10px auto;
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+
+            img {
+                max-width: 200px;
+            }
+        }
     </style>
 </head>
 
@@ -94,7 +128,7 @@
         <header class="section-box">
             <h1>Mathis BOCHE</h1>
             <p>Visual Storyteller and Video Editor 🎬✨</p>
-            <a href="#about">Learn More</a>
+            <a href="#services">Video Production Services</a>
         </header>
 
         <!-- Section About -->
@@ -117,32 +151,28 @@
                 I take pride in every project I work on and strive to deliver content that leaves a lasting impact. Let's collaborate and
                 create something amazing together! 💫
             </p>
-            <a href="#services">See Services</a>
         </section>
 
         <!-- Section Video Production Services -->
         <section id="services" class="section-box">
             <h2>Video Production Services</h2>
-            <div class="services-list">
-                <div class="service-item">
+            <ul class="services-list">
+                <li class="service-item">
                     <h3>Professional Video Editing</h3>
                     <p>I offer professional video editing services to give your videos a polished and engaging look. Whether it's for
                         social media, YouTube, or promotional materials, I can bring your footage to life.</p>
-                    <a href="#contact">Get Started</a>
-                </div>
-                <div class="service-item">
+                </li>
+                <li class="service-item">
                     <h3>Captivating Ads & Promos</h3>
                     <p>Need eye-catching advertisements or promotional videos? I can create captivating ads and promos that will
                         grab the attention of your audience and boost your brand visibility.</p>
-                    <a href="#contact">Get Started</a>
-                </div>
-                <div class="service-item">
+                </li>
+                <li class="service-item">
                     <h3>Tailored Content for Your Brand</h3>
                     <p>No matter your brand or industry, I can tailor video content that aligns with your brand identity and
                         objectives, helping you stand out from the competition.</p>
-                    <a href="#contact">Get Started</a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
 
         <!-- Section Contact Me -->
