@@ -33,7 +33,7 @@
 
         a {
             display: block;
-            margin: 30px auto;
+            margin: 20px auto;
             background-color: #007bff;
             color: #fff;
             border: none;
@@ -54,14 +54,13 @@
             border: 4px solid #007bff;
             border-radius: 20px;
             padding: 40px;
-            margin: 40px 0;
             text-align: center;
             background-color: #ffffff;
         }
 
         img {
             display: block;
-            margin: 40px auto;
+            margin: 20px auto;
             max-width: 100%;
             border-radius: 50%;
         }
@@ -69,13 +68,13 @@
         .services-list {
             list-style-type: none;
             padding-left: 0;
+            margin: 0;
         }
 
         .service-item {
             border: 4px solid #007bff;
             border-radius: 20px;
             padding: 40px;
-            margin: 40px 0;
             text-align: center;
             background-color: #ffffff;
         }
@@ -95,46 +94,69 @@
         /* Media Query pour les téléphones */
         @media (max-width: 600px) {
             .container {
-                padding: 20px;
+                padding: 10px;
             }
 
             h1 {
-                font-size: 36px;
-            }
-
-            h2 {
-                font-size: 32px;
-            }
-
-            p {
                 font-size: 28px;
             }
 
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
             a {
-                margin: 20px auto;
-                padding: 30px 60px;
-                font-size: 32px;
+                margin: 10px auto;
+                padding: 20px 40px;
+                font-size: 24px;
             }
 
             img {
-                max-width: 300px;
+                max-width: 250px;
             }
 
             .portfolio-item {
                 flex: 0 0 100%;
+                margin: 10px;
             }
 
             .portfolio-item h3 {
-                font-size: 28px;
+                font-size: 24px;
             }
 
             .portfolio-item p {
-                font-size: 24px;
+                font-size: 20px;
             }
 
             .btn-view {
                 padding: 16px 32px;
+                font-size: 24px;
+            }
+
+            .section-box {
+                padding: 20px;
+            }
+
+            .services-list {
+                padding-left: 0;
+            }
+
+            .service-item {
+                padding: 20px;
+            }
+
+            .service-item h3 {
                 font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            .service-item p {
+                font-size: 24px;
+                margin-bottom: 20px;
             }
         }
 
@@ -143,16 +165,17 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            margin: -10px;
         }
 
         .portfolio-item {
             border: 4px solid #007bff;
             border-radius: 20px;
             padding: 40px;
-            margin: 40px;
             text-align: center;
             background-color: #ffffff;
             max-width: 400px;
+            margin: 10px;
         }
 
         .portfolio-item img {
